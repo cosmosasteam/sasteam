@@ -1,4 +1,4 @@
-xconst DEFAULT_ALLOWED_ORIGIN = "https://cosmoact.github.io";
+const DEFAULT_ALLOWED_ORIGIN = "https://cosmoact.github.io";
 
 function getAllowedOrigins() {
   const raw =
@@ -31,7 +31,11 @@ function setCorsHeaders(req, res) {
 }
 
 function sendJson(res, status, payload) {
-  res.status(status).json(payload);
+  const encoded = JSON.stringify(payload);
+  res.statusCode = status;
+  res.setHeader("Content-Type", "application/json; charset=utf-8");
+  res.setHeader("Content-Length", Buffer.byteLength(encoded));
+  res.end(encoded);
 }
 
 function cleanText(value, maxLength) {
@@ -155,7 +159,8 @@ module.exports = async function handler(req, res) {
   const originAllowed = setCorsHeaders(req, res);
 
   if (req.method === "OPTIONS") {
-    res.status(204).end();
+    res.statusCode = 204;
+    res.end();
     return;
   }
 
