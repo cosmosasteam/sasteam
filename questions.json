@@ -1,0 +1,1063 @@
+{
+  "title": "Connais-tu vraiment la sasteam ?",
+  "subtitle": "Le questionnaire officiel de la SASTeam",
+  "results": [
+    {
+      "minScore": 0,
+      "title": "Tu connais pas la SASTeam",
+      "message": "C'est une honte, on devrait te ban en vrai. Rejoue et viens sauver ton honneur."
+    },
+    {
+      "minScore": 20,
+      "title": "Tu connais un peu la SASTeam",
+      "message": "Pas ridicule, mais pas incroyable non plus. Il te manque encore deux-trois dossiers."
+    },
+    {
+      "minScore": 32,
+      "title": "Tu connais bien la SASTeam",
+      "message": "Bravo ! Tu connais vraiment la SASTeam, respect officiel."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "question": "quel a été le premier nom de la commu ?",
+      "answers": [
+        {
+          "id": "q01-a1",
+          "label": "ça suffit",
+          "correct": false
+        },
+        {
+          "id": "q01-a2",
+          "label": "salsifis",
+          "correct": true
+        },
+        {
+          "id": "q01-a3",
+          "label": "saffi",
+          "correct": false
+        },
+        {
+          "id": "q01-a4",
+          "label": "sasteam",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "quel est le premier fait sur la chaine ?",
+      "answers": [
+        {
+          "id": "q02-a1",
+          "label": "skyrim",
+          "correct": false
+        },
+        {
+          "id": "q02-a2",
+          "label": "Disney dreamlight",
+          "correct": false
+        },
+        {
+          "id": "q02-a3",
+          "label": "yes your grace",
+          "correct": false
+        },
+        {
+          "id": "q02-a4",
+          "label": "my sims",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "Quel est le modo top 1 ?",
+      "answers": [
+        {
+          "id": "q03-a1",
+          "label": "cosmo",
+          "correct": false
+        },
+        {
+          "id": "q03-a2",
+          "label": "nounours",
+          "correct": true
+        },
+        {
+          "id": "q03-a3",
+          "label": "shayon",
+          "correct": false
+        },
+        {
+          "id": "q03-a4",
+          "label": "puwpa",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "Qui est le premier à s'etre sub Tier 3 à la chaine ?",
+      "answers": [
+        {
+          "id": "q04-a1",
+          "label": "Le J",
+          "correct": true
+        },
+        {
+          "id": "q04-a2",
+          "label": "Luds",
+          "correct": false
+        },
+        {
+          "id": "q04-a3",
+          "label": "Nounours",
+          "correct": false
+        },
+        {
+          "id": "q04-a4",
+          "label": "Mailly",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "Qui est Rcon ?",
+      "answers": [
+        {
+          "id": "q05-a1",
+          "label": "Remote Control",
+          "correct": false
+        },
+        {
+          "id": "q05-a2",
+          "label": "Mailly",
+          "correct": false
+        },
+        {
+          "id": "q05-a3",
+          "label": "Dieu de Yumitown",
+          "correct": true
+        },
+        {
+          "id": "q05-a4",
+          "label": "CosmoBot",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "Quel est le premier follower de la chaine ?",
+      "answers": [
+        {
+          "id": "q06-a1",
+          "label": "Frigo2022",
+          "correct": false
+        },
+        {
+          "id": "q06-a2",
+          "label": "Puwpa",
+          "correct": true
+        },
+        {
+          "id": "q06-a3",
+          "label": "Chiil92",
+          "correct": false
+        },
+        {
+          "id": "q06-a4",
+          "label": "petitloulixleboss",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "Pourquoi on appelle Nounours \"Chef\" ?",
+      "answers": [
+        {
+          "id": "q07-a1",
+          "label": "Car il s'appelait GrandChefLeBoss",
+          "correct": true
+        },
+        {
+          "id": "q07-a2",
+          "label": "Parce que c'est le bras droit",
+          "correct": false
+        },
+        {
+          "id": "q07-a3",
+          "label": "Car il a une attitude militaire",
+          "correct": false
+        },
+        {
+          "id": "q07-a4",
+          "label": "Car c'est le modo marteau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "Quelle est la premiere musique de Cosmo ?",
+      "answers": [
+        {
+          "id": "q08-a1",
+          "label": "SAS Chill",
+          "correct": false
+        },
+        {
+          "id": "q08-a2",
+          "label": "SAS Song",
+          "correct": true
+        },
+        {
+          "id": "q08-a3",
+          "label": "SASSong max de ref",
+          "correct": false
+        },
+        {
+          "id": "q08-a4",
+          "label": "CosmoLeRoi Parceque je suis trop beau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "Quelle est la premiere musique Hors-série dispo dans CosmoZik ?",
+      "answers": [
+        {
+          "id": "q09-a1",
+          "label": "Locked",
+          "correct": false
+        },
+        {
+          "id": "q09-a2",
+          "label": "Lil'Smaki",
+          "correct": false
+        },
+        {
+          "id": "q09-a3",
+          "label": "Resurection",
+          "correct": true
+        },
+        {
+          "id": "q09-a4",
+          "label": "CosmoLeRoi parce que vraiment je suis trop beau",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "Comment s'appelle la crush de CosmoBot ?",
+      "answers": [
+        {
+          "id": "q10-a1",
+          "label": "CosmaBot",
+          "correct": false
+        },
+        {
+          "id": "q10-a2",
+          "label": "CosmaiBot",
+          "correct": false
+        },
+        {
+          "id": "q10-a3",
+          "label": "CosmiaBot",
+          "correct": true
+        },
+        {
+          "id": "q10-a4",
+          "label": "CosmaLaReine",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "A quelle date Cloudexd s'est follow à la chaine ?",
+      "answers": [
+        {
+          "id": "q11-a1",
+          "label": "06/11/2025",
+          "correct": true
+        },
+        {
+          "id": "q11-a2",
+          "label": "07/11/2025",
+          "correct": false
+        },
+        {
+          "id": "q11-a3",
+          "label": "05/11/2025",
+          "correct": false
+        },
+        {
+          "id": "q11-a4",
+          "label": "01/12/2025",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "Qu'a fait le plombier après avoir réparé le radiateur ?",
+      "answers": [
+        {
+          "id": "q12-a1",
+          "label": "Il a pris le café",
+          "correct": false
+        },
+        {
+          "id": "q12-a2",
+          "label": "Il s'est posé sur le C-word",
+          "correct": false
+        },
+        {
+          "id": "q12-a3",
+          "label": "il a démoulé un cake",
+          "correct": true
+        },
+        {
+          "id": "q12-a4",
+          "label": "il a kidnappé Yumi",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "question": "Qui a dégagé le pigeon mort de la terrasse ?",
+      "answers": [
+        {
+          "id": "q13-a1",
+          "label": "Guytan",
+          "correct": false
+        },
+        {
+          "id": "q13-a2",
+          "label": "Nounours",
+          "correct": false
+        },
+        {
+          "id": "q13-a3",
+          "label": "Cloudexd",
+          "correct": true
+        },
+        {
+          "id": "q13-a4",
+          "label": "Cosmo",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "question": "Quand a été créé le server discord ?",
+      "answers": [
+        {
+          "id": "q14-a1",
+          "label": "24/10/2025",
+          "correct": true
+        },
+        {
+          "id": "q14-a2",
+          "label": "02/11/2025",
+          "correct": false
+        },
+        {
+          "id": "q14-a3",
+          "label": "19/11/2025",
+          "correct": false
+        },
+        {
+          "id": "q14-a4",
+          "label": "11/12/2025",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "question": "Combien de modos il y a dans la team ?",
+      "answers": [
+        {
+          "id": "q15-a1",
+          "label": "9",
+          "correct": false
+        },
+        {
+          "id": "q15-a2",
+          "label": "11",
+          "correct": true
+        },
+        {
+          "id": "q15-a3",
+          "label": "7",
+          "correct": false
+        },
+        {
+          "id": "q15-a4",
+          "label": "10",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "question": "C'est qui le patron ?",
+      "answers": [
+        {
+          "id": "q16-a1",
+          "label": "C'est moi",
+          "correct": false
+        },
+        {
+          "id": "q16-a2",
+          "label": "Luds",
+          "correct": true
+        },
+        {
+          "id": "q16-a3",
+          "label": "Orom",
+          "correct": false
+        },
+        {
+          "id": "q16-a4",
+          "label": "Asma",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "question": "Qui est le deuxieme a s'etre connecté sur YumiTown ?",
+      "answers": [
+        {
+          "id": "q17-a1",
+          "label": "Mailly",
+          "correct": false
+        },
+        {
+          "id": "q17-a2",
+          "label": "Shayon",
+          "correct": false
+        },
+        {
+          "id": "q17-a3",
+          "label": "Cosmo",
+          "correct": true
+        },
+        {
+          "id": "q17-a4",
+          "label": "Nounours",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "question": "Quelle est la première équipe de modération ?",
+      "answers": [
+        {
+          "id": "q18-a1",
+          "label": "Nounours, Chiil, Guytan, Frigo, trèfle et Banh",
+          "correct": true
+        },
+        {
+          "id": "q18-a2",
+          "label": "Leila, Chiil, Nounours, trèfle, Cosmo, Guytan",
+          "correct": false
+        },
+        {
+          "id": "q18-a3",
+          "label": "Chiil, Nounours, Banh, CosmoBot, Trèfle, Frigo",
+          "correct": false
+        },
+        {
+          "id": "q18-a4",
+          "label": "Shayon, Irafim, Cosmo, Nounours, CosmoBot, Chiil",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "question": "Qui a été la premiere personne avec plus de 10k followers (YouTube/Twitch) à être passé sur le live de Sarah ?",
+      "answers": [
+        {
+          "id": "q19-a1",
+          "label": "Pierre2LaHousse",
+          "correct": false
+        },
+        {
+          "id": "q19-a2",
+          "label": "AlexNovia",
+          "correct": false
+        },
+        {
+          "id": "q19-a3",
+          "label": "JigFio",
+          "correct": true
+        },
+        {
+          "id": "q19-a4",
+          "label": "Louloutic",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "question": "Qu'est-ce qu'à gagné treauma lors du premier 24h ?",
+      "answers": [
+        {
+          "id": "q20-a1",
+          "label": "Une figurine",
+          "correct": false
+        },
+        {
+          "id": "q20-a2",
+          "label": "des yuyu dans le tchat",
+          "correct": false
+        },
+        {
+          "id": "q20-a3",
+          "label": "son nom sur le Stream",
+          "correct": true
+        },
+        {
+          "id": "q20-a4",
+          "label": "une CosmoZik",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q21",
+      "question": "Quelle est la première CosmoZik gagnée grâce à une roue ?",
+      "answers": [
+        {
+          "id": "q21-a1",
+          "label": "T'es qui ?",
+          "correct": true
+        },
+        {
+          "id": "q21-a2",
+          "label": "29%",
+          "correct": false
+        },
+        {
+          "id": "q21-a3",
+          "label": "Psykeure",
+          "correct": false
+        },
+        {
+          "id": "q21-a4",
+          "label": "Adrienxd",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q22",
+      "question": "Combien est le pourcentage du Stream 24h que Shayon avait loupé ?",
+      "answers": [
+        {
+          "id": "q22-a1",
+          "label": "22%",
+          "correct": false
+        },
+        {
+          "id": "q22-a2",
+          "label": "29%",
+          "correct": true
+        },
+        {
+          "id": "q22-a3",
+          "label": "50%",
+          "correct": false
+        },
+        {
+          "id": "q22-a4",
+          "label": "10%",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q23",
+      "question": "Qu'est-ce que : faire une luds ?",
+      "answers": [
+        {
+          "id": "q23-a1",
+          "label": "Dire qu'on va partir après une somme de subs",
+          "correct": true
+        },
+        {
+          "id": "q23-a2",
+          "label": "Donner beaucoup de subs",
+          "correct": false
+        },
+        {
+          "id": "q23-a3",
+          "label": "Être belge",
+          "correct": false
+        },
+        {
+          "id": "q23-a4",
+          "label": "Être riche",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q24",
+      "question": "Qu'est-ce que : faire une Mathilde ?",
+      "answers": [
+        {
+          "id": "q24-a1",
+          "label": "Partir sans rien dire",
+          "correct": true
+        },
+        {
+          "id": "q24-a2",
+          "label": "Demander de l'argent",
+          "correct": false
+        },
+        {
+          "id": "q24-a3",
+          "label": "Avoir un chat",
+          "correct": false
+        },
+        {
+          "id": "q24-a4",
+          "label": "Être alcoolique",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q25",
+      "question": "Quelle couleur sont les yeux de Yumi ?",
+      "answers": [
+        {
+          "id": "q25-a1",
+          "label": "Vert",
+          "correct": false
+        },
+        {
+          "id": "q25-a2",
+          "label": "Jaune",
+          "correct": false
+        },
+        {
+          "id": "q25-a3",
+          "label": "Bleu",
+          "correct": false
+        },
+        {
+          "id": "q25-a4",
+          "label": "Orange",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q26",
+      "question": "Quelle est la couleur de Sarah en Hexadécimale ?",
+      "answers": [
+        {
+          "id": "q26-a1",
+          "label": "C8AD7F",
+          "correct": false
+        },
+        {
+          "id": "q26-a2",
+          "label": "004769",
+          "correct": true
+        },
+        {
+          "id": "q26-a3",
+          "label": "003b6f",
+          "correct": false
+        },
+        {
+          "id": "q26-a4",
+          "label": "5H4Y0N",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q27",
+      "question": "Quels sont les 3 prénoms de Sarah ? (Fait un sondage car toi tu sais)",
+      "answers": [
+        {
+          "id": "q27-a1",
+          "label": "Sarah, Camille, Emma",
+          "correct": false
+        },
+        {
+          "id": "q27-a2",
+          "label": "Sarah, Sofia, Ines",
+          "correct": false
+        },
+        {
+          "id": "q27-a3",
+          "label": "Sarah, Mouna, Camelia",
+          "correct": true
+        },
+        {
+          "id": "q27-a4",
+          "label": "Sarah, Sarah, Sarah",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q28",
+      "question": "Quelle activité Créa Sarah n'a pas faite en Live ?",
+      "answers": [
+        {
+          "id": "q28-a1",
+          "label": "Peinture",
+          "correct": false
+        },
+        {
+          "id": "q28-a2",
+          "label": "Argile",
+          "correct": false
+        },
+        {
+          "id": "q28-a3",
+          "label": "Origami",
+          "correct": true
+        },
+        {
+          "id": "q28-a4",
+          "label": "Lego",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q29",
+      "question": "A qui correspond cette date d'anniversaire : 06/01/2005 ?",
+      "answers": [
+        {
+          "id": "q29-a1",
+          "label": "Nanas",
+          "correct": false
+        },
+        {
+          "id": "q29-a2",
+          "label": "Anexy",
+          "correct": false
+        },
+        {
+          "id": "q29-a3",
+          "label": "VLS",
+          "correct": false
+        },
+        {
+          "id": "q29-a4",
+          "label": "Lilian",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q30",
+      "question": "Quel vice n'est pas un vice de Shayon ?",
+      "answers": [
+        {
+          "id": "q30-a1",
+          "label": "Zoophilie",
+          "correct": false
+        },
+        {
+          "id": "q30-a2",
+          "label": "Scatophilie",
+          "correct": false
+        },
+        {
+          "id": "q30-a3",
+          "label": "P*dophilie",
+          "correct": false
+        },
+        {
+          "id": "q30-a4",
+          "label": "Kleptomanie",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q31",
+      "question": "Qui est le premier SASCouple ?",
+      "answers": [
+        {
+          "id": "q31-a1",
+          "label": "Luds et anexy",
+          "correct": true
+        },
+        {
+          "id": "q31-a2",
+          "label": "Cosmo et Nanas",
+          "correct": false
+        },
+        {
+          "id": "q31-a3",
+          "label": "Nounours et Sarah",
+          "correct": false
+        },
+        {
+          "id": "q31-a4",
+          "label": "Shayon et Treauma",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q32",
+      "question": "Quel a été le premier business de Cosmo sur YumiTown ?",
+      "answers": [
+        {
+          "id": "q32-a1",
+          "label": "La coco",
+          "correct": true
+        },
+        {
+          "id": "q32-a2",
+          "label": "Le Trafique d'organes",
+          "correct": false
+        },
+        {
+          "id": "q32-a3",
+          "label": "les Honeys",
+          "correct": false
+        },
+        {
+          "id": "q32-a4",
+          "label": "Trafique d'enfants",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q33",
+      "question": "Quel est le record de Shayon dans YumiTown ?",
+      "answers": [
+        {
+          "id": "q33-a1",
+          "label": "12 Gateaux vendu",
+          "correct": false
+        },
+        {
+          "id": "q33-a2",
+          "label": "1635 Honeys achetées",
+          "correct": true
+        },
+        {
+          "id": "q33-a3",
+          "label": "30 montres envoyées à sarah",
+          "correct": false
+        },
+        {
+          "id": "q33-a4",
+          "label": "1 500 000 000 fois qu'il regarde josé",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q34",
+      "question": "Combien de Blocs fait la tour d'Ira ?",
+      "answers": [
+        {
+          "id": "q34-a1",
+          "label": "320 blocs",
+          "correct": false
+        },
+        {
+          "id": "q34-a2",
+          "label": "561 blocs",
+          "correct": false
+        },
+        {
+          "id": "q34-a3",
+          "label": "140 blocs",
+          "correct": true
+        },
+        {
+          "id": "q34-a4",
+          "label": "1245 blocs",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q35",
+      "question": "Où Nounours est allé cherché son bonnet ?",
+      "answers": [
+        {
+          "id": "q35-a1",
+          "label": "à la machine à laver",
+          "correct": false
+        },
+        {
+          "id": "q35-a2",
+          "label": "au magasin",
+          "correct": false
+        },
+        {
+          "id": "q35-a3",
+          "label": "entre les deux montagnes du bonheur",
+          "correct": true
+        },
+        {
+          "id": "q35-a4",
+          "label": "il l'a volé",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q36",
+      "question": "Pourquoi Shayon a quitté Irafim ?",
+      "answers": [
+        {
+          "id": "q36-a1",
+          "label": "Car il ne l'aime plus",
+          "correct": false
+        },
+        {
+          "id": "q36-a2",
+          "label": "Car Haley est rentrée dans sa vie",
+          "correct": true
+        },
+        {
+          "id": "q36-a3",
+          "label": "Car Treauma lui a fait les yeux doux",
+          "correct": false
+        },
+        {
+          "id": "q36-a4",
+          "label": "Car il est tombé in love de Ken",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q37",
+      "question": "Dans quel endroit Nounours ne s'est pas (encore) endormi ?",
+      "answers": [
+        {
+          "id": "q37-a1",
+          "label": "Sur sa chaise",
+          "correct": false
+        },
+        {
+          "id": "q37-a2",
+          "label": "Au volant",
+          "correct": false
+        },
+        {
+          "id": "q37-a3",
+          "label": "Chez Cosmo",
+          "correct": false
+        },
+        {
+          "id": "q37-a4",
+          "label": "Chez Sarah",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "q38",
+      "question": "Combien de PC a Cosmo ?",
+      "answers": [
+        {
+          "id": "q38-a1",
+          "label": "7",
+          "correct": true
+        },
+        {
+          "id": "q38-a2",
+          "label": "11",
+          "correct": false
+        },
+        {
+          "id": "q38-a3",
+          "label": "2",
+          "correct": false
+        },
+        {
+          "id": "q38-a4",
+          "label": "3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q39",
+      "question": "Quel est le pourcentage de /love entre Yumi et Sarah ?",
+      "answers": [
+        {
+          "id": "q39-a1",
+          "label": "29%",
+          "correct": false
+        },
+        {
+          "id": "q39-a2",
+          "label": "77%",
+          "correct": false
+        },
+        {
+          "id": "q39-a3",
+          "label": "30%",
+          "correct": true
+        },
+        {
+          "id": "q39-a4",
+          "label": "100%",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "q40",
+      "question": "Où est-ce que CosmoBot n'apparait pas ?",
+      "answers": [
+        {
+          "id": "q40-a1",
+          "label": "Discord",
+          "correct": false
+        },
+        {
+          "id": "q40-a2",
+          "label": "YumiTown",
+          "correct": false
+        },
+        {
+          "id": "q40-a3",
+          "label": "TikTok",
+          "correct": false
+        },
+        {
+          "id": "q40-a4",
+          "label": "Telegram",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}
