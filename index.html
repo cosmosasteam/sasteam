@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="sasteam-score-endpoint" content="https://sasteam.vercel.app/api/submit-score" />
     <title>Questionnaire SASTeam</title>
     <style>
 :root {
@@ -521,10 +522,10 @@ h1 {
                 required
               />
               <p class="privacy-note">
-                Version GitHub Pages : ton pseudo sert au quiz, aucun score ni IP n'est envoyé.
+                Ton pseudo, ton score final et ton IP seront envoyes au webhook SASTeam si l'API est configuree.
               </p>
               <button class="primary-action" type="submit" id="start-button" disabled>
-                Démarrer le test
+                DÃ©marrer le test
               </button>
             </form>
           </section>
@@ -542,7 +543,7 @@ h1 {
           </section>
 
           <section class="result-view view" id="result-view">
-            <p class="result-label">Résultat final</p>
+            <p class="result-label">RÃ©sultat final</p>
             <div class="result-score" id="result-score">0 / 0</div>
             <h2 id="result-title"></h2>
             <p id="result-message"></p>
@@ -567,6 +568,7 @@ h1 {
         aria-hidden="true"
       />
     </main>
+
     <script>
 const state = {
   quiz: null,
@@ -576,6 +578,31 @@ const state = {
   playerName: "",
   scoreSubmitted: false,
 };
+
+const SCORE_ENDPOINT = getScoreEndpoint();
+
+function getScoreEndpoint() {
+  const fromWindow =
+    typeof window.SASTEAM_SCORE_ENDPOINT === "string" ? window.SASTEAM_SCORE_ENDPOINT.trim() : "";
+  const fromMeta = document
+    .querySelector('meta[name="sasteam-score-endpoint"]')
+    ?.getAttribute("content")
+    ?.trim();
+
+  if (fromWindow || fromMeta) {
+    return fromWindow || fromMeta;
+  }
+
+  if (window.location.hostname.endsWith("vercel.app")) {
+    return "/api/submit-score";
+  }
+
+  if (window.location.protocol === "file:" || window.location.hostname.endsWith("github.io")) {
+    return "";
+  }
+
+  return "/submit-score";
+}
 
 const fallbackQuiz = {
   "title": "Connais-tu vraiment la sasteam ?",
@@ -600,11 +627,11 @@ const fallbackQuiz = {
   "questions": [
     {
       "id": "q01",
-      "question": "quel a été le premier nom de la commu ?",
+      "question": "quel a Ã©tÃ© le premier nom de la commu ?",
       "answers": [
         {
           "id": "q01-a1",
-          "label": "ça suffit",
+          "label": "Ã§a suffit",
           "correct": false
         },
         {
@@ -678,7 +705,7 @@ const fallbackQuiz = {
     },
     {
       "id": "q04",
-      "question": "Qui est le premier à s'etre sub Tier 3 à la chaine ?",
+      "question": "Qui est le premier Ã  s'etre sub Tier 3 Ã  la chaine ?",
       "answers": [
         {
           "id": "q04-a1",
@@ -808,7 +835,7 @@ const fallbackQuiz = {
     },
     {
       "id": "q09",
-      "question": "Quelle est la premiere musique Hors-série dispo dans CosmoZik ?",
+      "question": "Quelle est la premiere musique Hors-sÃ©rie dispo dans CosmoZik ?",
       "answers": [
         {
           "id": "q09-a1",
@@ -860,7 +887,7 @@ const fallbackQuiz = {
     },
     {
       "id": "q11",
-      "question": "A quelle date Cloudexd s'est follow à la chaine ?",
+      "question": "A quelle date Cloudexd s'est follow Ã  la chaine ?",
       "answers": [
         {
           "id": "q11-a1",
@@ -886,33 +913,33 @@ const fallbackQuiz = {
     },
     {
       "id": "q12",
-      "question": "Qu'a fait le plombier après avoir réparé le radiateur ?",
+      "question": "Qu'a fait le plombier aprÃ¨s avoir rÃ©parÃ© le radiateur ?",
       "answers": [
         {
           "id": "q12-a1",
-          "label": "Il a pris le café",
+          "label": "Il a pris le cafÃ©",
           "correct": false
         },
         {
           "id": "q12-a2",
-          "label": "Il s'est posé sur le C-word",
+          "label": "Il s'est posÃ© sur le C-word",
           "correct": false
         },
         {
           "id": "q12-a3",
-          "label": "il a démoulé un cake",
+          "label": "il a dÃ©moulÃ© un cake",
           "correct": true
         },
         {
           "id": "q12-a4",
-          "label": "il a kidnappé Yumi",
+          "label": "il a kidnappÃ© Yumi",
           "correct": false
         }
       ]
     },
     {
       "id": "q13",
-      "question": "Qui a dégagé le pigeon mort de la terrasse ?",
+      "question": "Qui a dÃ©gagÃ© le pigeon mort de la terrasse ?",
       "answers": [
         {
           "id": "q13-a1",
@@ -938,7 +965,7 @@ const fallbackQuiz = {
     },
     {
       "id": "q14",
-      "question": "Quand a été créé le server discord ?",
+      "question": "Quand a Ã©tÃ© crÃ©Ã© le server discord ?",
       "answers": [
         {
           "id": "q14-a1",
@@ -1016,7 +1043,7 @@ const fallbackQuiz = {
     },
     {
       "id": "q17",
-      "question": "Qui est le deuxieme a s'etre connecté sur YumiTown ?",
+      "question": "Qui est le deuxieme a s'etre connectÃ© sur YumiTown ?",
       "answers": [
         {
           "id": "q17-a1",
@@ -1042,21 +1069,21 @@ const fallbackQuiz = {
     },
     {
       "id": "q18",
-      "question": "Quelle est la première équipe de modération ?",
+      "question": "Quelle est la premiÃ¨re Ã©quipe de modÃ©ration ?",
       "answers": [
         {
           "id": "q18-a1",
-          "label": "Nounours, Chiil, Guytan, Frigo, trèfle et Banh",
+          "label": "Nounours, Chiil, Guytan, Frigo, trÃ¨fle et Banh",
           "correct": true
         },
         {
           "id": "q18-a2",
-          "label": "Leila, Chiil, Nounours, trèfle, Cosmo, Guytan",
+          "label": "Leila, Chiil, Nounours, trÃ¨fle, Cosmo, Guytan",
           "correct": false
         },
         {
           "id": "q18-a3",
-          "label": "Chiil, Nounours, Banh, CosmoBot, Trèfle, Frigo",
+          "label": "Chiil, Nounours, Banh, CosmoBot, TrÃ¨fle, Frigo",
           "correct": false
         },
         {
@@ -1068,7 +1095,7 @@ const fallbackQuiz = {
     },
     {
       "id": "q19",
-      "question": "Qui a été la premiere personne avec plus de 10k followers (YouTube/Twitch) à être passé sur le live de Sarah ?",
+      "question": "Qui a Ã©tÃ© la premiere personne avec plus de 10k followers (YouTube/Twitch) Ã  Ãªtre passÃ© sur le live de Sarah ?",
       "answers": [
         {
           "id": "q19-a1",
@@ -1094,7 +1121,7 @@ const fallbackQuiz = {
     },
     {
       "id": "q20",
-      "question": "Qu'est-ce qu'à gagné treauma lors du premier 24h ?",
+      "question": "Qu'est-ce qu'Ã  gagnÃ© treauma lors du premier 24h ?",
       "answers": [
         {
           "id": "q20-a1",
@@ -1120,7 +1147,7 @@ const fallbackQuiz = {
     },
     {
       "id": "q21",
-      "question": "Quelle est la première CosmoZik gagnée grâce à une roue ?",
+      "question": "Quelle est la premiÃ¨re CosmoZik gagnÃ©e grÃ¢ce Ã  une roue ?",
       "answers": [
         {
           "id": "q21-a1",
@@ -1146,7 +1173,7 @@ const fallbackQuiz = {
     },
     {
       "id": "q22",
-      "question": "Combien est le pourcentage du Stream 24h que Shayon avait loupé ?",
+      "question": "Combien est le pourcentage du Stream 24h que Shayon avait loupÃ© ?",
       "answers": [
         {
           "id": "q22-a1",
@@ -1176,7 +1203,7 @@ const fallbackQuiz = {
       "answers": [
         {
           "id": "q23-a1",
-          "label": "Dire qu'on va partir après une somme de subs",
+          "label": "Dire qu'on va partir aprÃ¨s une somme de subs",
           "correct": true
         },
         {
@@ -1186,12 +1213,12 @@ const fallbackQuiz = {
         },
         {
           "id": "q23-a3",
-          "label": "Être belge",
+          "label": "ÃŠtre belge",
           "correct": false
         },
         {
           "id": "q23-a4",
-          "label": "Être riche",
+          "label": "ÃŠtre riche",
           "correct": false
         }
       ]
@@ -1217,7 +1244,7 @@ const fallbackQuiz = {
         },
         {
           "id": "q24-a4",
-          "label": "Être alcoolique",
+          "label": "ÃŠtre alcoolique",
           "correct": false
         }
       ]
@@ -1250,7 +1277,7 @@ const fallbackQuiz = {
     },
     {
       "id": "q26",
-      "question": "Quelle est la couleur de Sarah en Hexadécimale ?",
+      "question": "Quelle est la couleur de Sarah en HexadÃ©cimale ?",
       "answers": [
         {
           "id": "q26-a1",
@@ -1276,7 +1303,7 @@ const fallbackQuiz = {
     },
     {
       "id": "q27",
-      "question": "Quels sont les 3 prénoms de Sarah ? (Fait un sondage car toi tu sais)",
+      "question": "Quels sont les 3 prÃ©noms de Sarah ? (Fait un sondage car toi tu sais)",
       "answers": [
         {
           "id": "q27-a1",
@@ -1302,7 +1329,7 @@ const fallbackQuiz = {
     },
     {
       "id": "q28",
-      "question": "Quelle activité Créa Sarah n'a pas faite en Live ?",
+      "question": "Quelle activitÃ© CrÃ©a Sarah n'a pas faite en Live ?",
       "answers": [
         {
           "id": "q28-a1",
@@ -1406,7 +1433,7 @@ const fallbackQuiz = {
     },
     {
       "id": "q32",
-      "question": "Quel a été le premier business de Cosmo sur YumiTown ?",
+      "question": "Quel a Ã©tÃ© le premier business de Cosmo sur YumiTown ?",
       "answers": [
         {
           "id": "q32-a1",
@@ -1441,17 +1468,17 @@ const fallbackQuiz = {
         },
         {
           "id": "q33-a2",
-          "label": "1635 Honeys achetées",
+          "label": "1635 Honeys achetÃ©es",
           "correct": true
         },
         {
           "id": "q33-a3",
-          "label": "30 montres envoyées à sarah",
+          "label": "30 montres envoyÃ©es Ã  sarah",
           "correct": false
         },
         {
           "id": "q33-a4",
-          "label": "1 500 000 000 fois qu'il regarde josé",
+          "label": "1 500 000 000 fois qu'il regarde josÃ©",
           "correct": false
         }
       ]
@@ -1484,11 +1511,11 @@ const fallbackQuiz = {
     },
     {
       "id": "q35",
-      "question": "Où Nounours est allé cherché son bonnet ?",
+      "question": "OÃ¹ Nounours est allÃ© cherchÃ© son bonnet ?",
       "answers": [
         {
           "id": "q35-a1",
-          "label": "à la machine à laver",
+          "label": "Ã  la machine Ã  laver",
           "correct": false
         },
         {
@@ -1503,14 +1530,14 @@ const fallbackQuiz = {
         },
         {
           "id": "q35-a4",
-          "label": "il l'a volé",
+          "label": "il l'a volÃ©",
           "correct": false
         }
       ]
     },
     {
       "id": "q36",
-      "question": "Pourquoi Shayon a quitté Irafim ?",
+      "question": "Pourquoi Shayon a quittÃ© Irafim ?",
       "answers": [
         {
           "id": "q36-a1",
@@ -1519,7 +1546,7 @@ const fallbackQuiz = {
         },
         {
           "id": "q36-a2",
-          "label": "Car Haley est rentrée dans sa vie",
+          "label": "Car Haley est rentrÃ©e dans sa vie",
           "correct": true
         },
         {
@@ -1529,7 +1556,7 @@ const fallbackQuiz = {
         },
         {
           "id": "q36-a4",
-          "label": "Car il est tombé in love de Ken",
+          "label": "Car il est tombÃ© in love de Ken",
           "correct": false
         }
       ]
@@ -1614,7 +1641,7 @@ const fallbackQuiz = {
     },
     {
       "id": "q40",
-      "question": "Où est-ce que CosmoBot n'apparait pas ?",
+      "question": "OÃ¹ est-ce que CosmoBot n'apparait pas ?",
       "answers": [
         {
           "id": "q40-a1",
@@ -1690,11 +1717,11 @@ function validateQuiz(data) {
     }
 
     if (question.answers.length < 2) {
-      throw new Error(`La question ${questionIndex + 1} doit avoir au moins deux réponses.`);
+      throw new Error(`La question ${questionIndex + 1} doit avoir au moins deux rÃ©ponses.`);
     }
 
     if (!question.answers.some((answer) => answer.correct === true)) {
-      throw new Error(`La question ${questionIndex + 1} n'a aucune bonne réponse.`);
+      throw new Error(`La question ${questionIndex + 1} n'a aucune bonne rÃ©ponse.`);
     }
   });
 
@@ -1801,12 +1828,12 @@ function selectAnswer(selectedButton, selectedAnswer, answers) {
   });
 
   elements.feedback.textContent = isCorrect
-    ? "Bonne réponse. +1 point pour la SASTeam."
-    : "Raté. La bonne réponse vient de s'allumer.";
+    ? "Bonne rÃ©ponse. +1 point pour la SASTeam."
+    : "RatÃ©. La bonne rÃ©ponse vient de s'allumer.";
   elements.feedback.classList.add(isCorrect ? "good" : "bad");
   elements.nextButton.disabled = false;
   elements.nextButton.textContent =
-    state.index === state.quiz.questions.length - 1 ? "Résultat" : "Suivant";
+    state.index === state.quiz.questions.length - 1 ? "RÃ©sultat" : "Suivant";
 
   updateScoreChip();
   updateProgress();
@@ -1816,8 +1843,8 @@ function getResultCopy() {
   const results = Array.isArray(state.quiz.results) ? state.quiz.results : [];
   const sortedResults = [...results].sort((a, b) => Number(a.minScore) - Number(b.minScore));
   const fallback = {
-    title: "Questionnaire terminé",
-    message: "Ton score final est affiché. Tu peux rejouer quand tu veux.",
+    title: "Questionnaire terminÃ©",
+    message: "Ton score final est affichÃ©. Tu peux rejouer quand tu veux.",
   };
 
   return sortedResults.reduce((current, result) => {
@@ -1875,9 +1902,26 @@ function goNext() {
   renderQuestion();
 }
 
-function loadQuiz() {
-  state.quiz = validateQuiz(fallbackQuiz);
-  setInitialCopy();
+async function loadQuiz() {
+  try {
+    const response = await fetch("questions.json", { cache: "no-store" });
+
+    if (!response.ok) {
+      throw new Error(`questions.json introuvable (${response.status}).`);
+    }
+
+    state.quiz = validateQuiz(await response.json());
+    setInitialCopy();
+  } catch (error) {
+    if (window.location.protocol === "file:") {
+      state.quiz = validateQuiz(fallbackQuiz);
+      setInitialCopy();
+      return;
+    }
+
+    elements.errorMessage.textContent = getQuizLoadError(error);
+    showView("error");
+  }
 }
 
 function getQuizLoadError(error) {
@@ -1900,9 +1944,44 @@ async function submitFinalScore(result) {
 
   state.scoreSubmitted = true;
   const total = state.quiz.questions.length;
-  elements.submitStatus.textContent =
-    `${state.playerName} termine avec ${state.score} / ${total}. Version GitHub Pages : aucun envoi Discord/IP.`;
-  elements.submitStatus.classList.add("is-ok");
+
+  if (!SCORE_ENDPOINT) {
+    elements.submitStatus.textContent =
+      "Score affiche, mais aucun backend webhook n'est configure pour cette version publiee.";
+    elements.submitStatus.classList.add("is-error");
+    return;
+  }
+
+  elements.submitStatus.textContent = "Envoi du score au webhook SASTeam...";
+
+  try {
+    const response = await fetch(SCORE_ENDPOINT, {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        pseudo: state.playerName,
+        score: state.score,
+        total,
+        resultTitle: result.title,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Erreur serveur ${response.status}`);
+    }
+
+    const payload = await response.json().catch(() => null);
+    const ipText = payload?.ip ? ` IP detectee : ${payload.ip}.` : "";
+    elements.submitStatus.textContent = `Score envoye au webhook SASTeam.${ipText}`;
+    elements.submitStatus.classList.add("is-ok");
+  } catch (error) {
+    elements.submitStatus.textContent =
+      "Impossible d'envoyer le score au webhook. Verifie que l'API /submit-score est en ligne.";
+    elements.submitStatus.classList.add("is-error");
+  }
 }
 
 elements.playerForm.addEventListener("submit", startQuizFromIntro);
