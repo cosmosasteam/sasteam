@@ -1950,7 +1950,7 @@ async function submitFinalScore(result) {
     return;
   }
 
-  elements.submitStatus.textContent = "Envoi du score au webhook SASTeam...";
+  elements.submitStatus.textContent = "";
 
   try {
     const response = await fetch(SCORE_ENDPOINT, {
@@ -1971,10 +1971,9 @@ async function submitFinalScore(result) {
       throw new Error(`Erreur serveur ${response.status}`);
     }
 
-    const payload = await response.json().catch(() => null);
-    const ipText = payload?.ip ? ` IP detectee : ${payload.ip}.` : "";
-    elements.submitStatus.textContent = `Score envoye au webhook SASTeam.${ipText}`;
-    elements.submitStatus.classList.add("is-ok");
+    await response.json().catch(() => null);
+    elements.submitStatus.textContent = "";
+    elements.submitStatus.className = "submit-status";
   } catch (error) {
     elements.submitStatus.textContent =
       "Impossible d'envoyer le score au webhook. Verifie que l'API /submit-score est en ligne.";
