@@ -21,52 +21,52 @@
   "questions": [
     {
       "id": "q01",
-      "question": "quel a été le premier nom de la commu ?",
+      "question": "Quel a été le premier nom de la commu ?",
       "answers": [
         {
           "id": "q01-a1",
-          "label": "ça suffit",
+          "label": "Ça suffit",
           "correct": false
         },
         {
           "id": "q01-a2",
-          "label": "salsifis",
+          "label": "Salsifis",
           "correct": true
         },
         {
           "id": "q01-a3",
-          "label": "saffi",
+          "label": "Saffi",
           "correct": false
         },
         {
           "id": "q01-a4",
-          "label": "sasteam",
+          "label": "Sasteam",
           "correct": false
         }
       ]
     },
     {
       "id": "q02",
-      "question": "quel est le premier fait sur la chaine ?",
+      "question": "Quel est le premier jeu fait sur la chaîne ?",
       "answers": [
         {
           "id": "q02-a1",
-          "label": "skyrim",
+          "label": "Skyrim",
           "correct": false
         },
         {
           "id": "q02-a2",
-          "label": "Disney dreamlight",
+          "label": "Disney Dreamlight",
           "correct": false
         },
         {
           "id": "q02-a3",
-          "label": "yes your grace",
+          "label": "Yes, Your Grace",
           "correct": false
         },
         {
           "id": "q02-a4",
-          "label": "my sims",
+          "label": "MySims",
           "correct": true
         }
       ]
@@ -77,29 +77,29 @@
       "answers": [
         {
           "id": "q03-a1",
-          "label": "cosmo",
+          "label": "Cosmo",
           "correct": false
         },
         {
           "id": "q03-a2",
-          "label": "nounours",
+          "label": "Nounours",
           "correct": true
         },
         {
           "id": "q03-a3",
-          "label": "shayon",
+          "label": "Shayon",
           "correct": false
         },
         {
           "id": "q03-a4",
-          "label": "puwpa",
+          "label": "Puwpa",
           "correct": false
         }
       ]
     },
     {
       "id": "q04",
-      "question": "Qui est le premier à s'etre sub Tier 3 à la chaine ?",
+      "question": "Qui est le premier à s'être sub Tier 3 à la chaîne ?",
       "answers": [
         {
           "id": "q04-a1",
@@ -139,7 +139,7 @@
         },
         {
           "id": "q05-a3",
-          "label": "Dieu de Yumitown",
+          "label": "Dieu de YumiTown",
           "correct": true
         },
         {
@@ -151,7 +151,7 @@
     },
     {
       "id": "q06",
-      "question": "Quel est le premier follower de la chaine ?",
+      "question": "Quel est le premier follower de la chaîne ?",
       "answers": [
         {
           "id": "q06-a1",
@@ -177,7 +177,7 @@
     },
     {
       "id": "q07",
-      "question": "Pourquoi on appelle Nounours \"Chef\" ?",
+      "question": "Pourquoi appelle-t-on Nounours « Chef » ?",
       "answers": [
         {
           "id": "q07-a1",
@@ -203,7 +203,7 @@
     },
     {
       "id": "q08",
-      "question": "Quelle est la premiere musique de Cosmo ?",
+      "question": "Quelle est la première musique de Cosmo ?",
       "answers": [
         {
           "id": "q08-a1",
@@ -222,14 +222,14 @@
         },
         {
           "id": "q08-a4",
-          "label": "CosmoLeRoi Parceque je suis trop beau",
+          "label": "CosmoLeRoi parce que je suis trop beau",
           "correct": false
         }
       ]
     },
     {
       "id": "q09",
-      "question": "Quelle est la premiere musique Hors-série dispo dans CosmoZik ?",
+      "question": "Quelle est la première musique hors-série disponible dans CosmoZik ?",
       "answers": [
         {
           "id": "q09-a1",
@@ -243,7 +243,7 @@
         },
         {
           "id": "q09-a3",
-          "label": "Resurection",
+          "label": "Résurrection",
           "correct": true
         },
         {
@@ -281,7 +281,7 @@
     },
     {
       "id": "q11",
-      "question": "A quelle date Cloudexd s'est follow à la chaine ?",
+      "question": "À quelle date Cloudexd a follow la chaîne ?",
       "answers": [
         {
           "id": "q11-a1",
@@ -321,12 +321,12 @@
         },
         {
           "id": "q12-a3",
-          "label": "il a démoulé un cake",
+          "label": "Il a démoulé un cake",
           "correct": true
         },
         {
           "id": "q12-a4",
-          "label": "il a kidnappé Yumi",
+          "label": "Il a kidnappé Yumi",
           "correct": false
         }
       ]
@@ -359,7 +359,7 @@
     },
     {
       "id": "q14",
-      "question": "Quand a été créé le server discord ?",
+      "question": "Quand a été créé le serveur Discord ?",
       "answers": [
         {
           "id": "q14-a1",
@@ -385,7 +385,7 @@
     },
     {
       "id": "q15",
-      "question": "Combien de modos il y a dans la team ?",
+      "question": "Combien de modos y a-t-il dans la team ?",
       "answers": [
         {
           "id": "q15-a1",
@@ -411,7 +411,7 @@
     },
     {
       "id": "q16",
-      "question": "C'est qui le patron ?",
+      "question": "C'est qui, le patron ?",
       "answers": [
         {
           "id": "q16-a1",
@@ -437,7 +437,7 @@
     },
     {
       "id": "q17",
-      "question": "Qui est le deuxieme a s'etre connecté sur YumiTown ?",
+      "question": "Qui est le deuxième à s'être connecté sur YumiTown ?",
       "answers": [
         {
           "id": "q17-a1",
@@ -467,12 +467,12 @@
       "answers": [
         {
           "id": "q18-a1",
-          "label": "Nounours, Chiil, Guytan, Frigo, trèfle et Banh",
+          "label": "Nounours, Chiil, Guytan, Frigo, Trèfle et Banh",
           "correct": true
         },
         {
           "id": "q18-a2",
-          "label": "Leila, Chiil, Nounours, trèfle, Cosmo, Guytan",
+          "label": "Leila, Chiil, Nounours, Trèfle, Cosmo, Guytan",
           "correct": false
         },
         {
@@ -489,7 +489,7 @@
     },
     {
       "id": "q19",
-      "question": "Qui a été la premiere personne avec plus de 10k followers (YouTube/Twitch) à être passé sur le live de Sarah ?",
+      "question": "Qui a été la première personne avec plus de 10k followers (YouTube/Twitch) à être passée sur le live de Sarah ?",
       "answers": [
         {
           "id": "q19-a1",
@@ -515,7 +515,7 @@
     },
     {
       "id": "q20",
-      "question": "Qu'est-ce qu'à gagné treauma lors du premier 24h ?",
+      "question": "Qu'est-ce qu'a gagné Treauma lors du premier 24h ?",
       "answers": [
         {
           "id": "q20-a1",
@@ -524,17 +524,17 @@
         },
         {
           "id": "q20-a2",
-          "label": "des yuyu dans le tchat",
+          "label": "Des YUYU dans le tchat",
           "correct": false
         },
         {
           "id": "q20-a3",
-          "label": "son nom sur le Stream",
+          "label": "Son nom sur le stream",
           "correct": true
         },
         {
           "id": "q20-a4",
-          "label": "une CosmoZik",
+          "label": "Une CosmoZik",
           "correct": false
         }
       ]
@@ -550,7 +550,7 @@
         },
         {
           "id": "q21-a2",
-          "label": "29%",
+          "label": "29 %",
           "correct": false
         },
         {
@@ -567,33 +567,33 @@
     },
     {
       "id": "q22",
-      "question": "Combien est le pourcentage du Stream 24h que Shayon avait loupé ?",
+      "question": "Quel pourcentage du stream 24h Shayon avait-il loupé ?",
       "answers": [
         {
           "id": "q22-a1",
-          "label": "22%",
+          "label": "22 %",
           "correct": false
         },
         {
           "id": "q22-a2",
-          "label": "29%",
+          "label": "29 %",
           "correct": true
         },
         {
           "id": "q22-a3",
-          "label": "50%",
+          "label": "50 %",
           "correct": false
         },
         {
           "id": "q22-a4",
-          "label": "10%",
+          "label": "10 %",
           "correct": false
         }
       ]
     },
     {
       "id": "q23",
-      "question": "Qu'est-ce que : faire une luds ?",
+      "question": "Qu'est-ce que « faire une Luds » ?",
       "answers": [
         {
           "id": "q23-a1",
@@ -619,7 +619,7 @@
     },
     {
       "id": "q24",
-      "question": "Qu'est-ce que : faire une Mathilde ?",
+      "question": "Qu'est-ce que « faire une Mathilde » ?",
       "answers": [
         {
           "id": "q24-a1",
@@ -645,7 +645,7 @@
     },
     {
       "id": "q25",
-      "question": "Quelle couleur sont les yeux de Yumi ?",
+      "question": "De quelle couleur sont les yeux de Yumi ?",
       "answers": [
         {
           "id": "q25-a1",
@@ -671,7 +671,7 @@
     },
     {
       "id": "q26",
-      "question": "Quelle est la couleur de Sarah en Hexadécimale ?",
+      "question": "Quelle est la couleur de Sarah en hexadécimal ?",
       "answers": [
         {
           "id": "q26-a1",
@@ -697,7 +697,7 @@
     },
     {
       "id": "q27",
-      "question": "Quels sont les 3 prénoms de Sarah ? (Fait un sondage car toi tu sais)",
+      "question": "Quels sont les 3 prénoms de Sarah ? (Fais un sondage, car toi, tu sais.)",
       "answers": [
         {
           "id": "q27-a1",
@@ -706,12 +706,12 @@
         },
         {
           "id": "q27-a2",
-          "label": "Sarah, Sofia, Ines",
+          "label": "Sarah, Sofia, Inès",
           "correct": false
         },
         {
           "id": "q27-a3",
-          "label": "Sarah, Mouna, Camelia",
+          "label": "Sarah, Mouna, Camélia",
           "correct": true
         },
         {
@@ -723,7 +723,7 @@
     },
     {
       "id": "q28",
-      "question": "Quelle activité Créa Sarah n'a pas faite en Live ?",
+      "question": "Quelle activité créa Sarah n'a-t-elle pas faite en live ?",
       "answers": [
         {
           "id": "q28-a1",
@@ -749,7 +749,7 @@
     },
     {
       "id": "q29",
-      "question": "A qui correspond cette date d'anniversaire : 06/01/2005 ?",
+      "question": "À qui correspond cette date d'anniversaire : 06/01/2005 ?",
       "answers": [
         {
           "id": "q29-a1",
@@ -805,7 +805,7 @@
       "answers": [
         {
           "id": "q31-a1",
-          "label": "Luds et anexy",
+          "label": "Luds et Anexy",
           "correct": true
         },
         {
@@ -836,17 +836,17 @@
         },
         {
           "id": "q32-a2",
-          "label": "Le Trafique d'organes",
+          "label": "Le trafic d'organes",
           "correct": false
         },
         {
           "id": "q32-a3",
-          "label": "les Honeys",
+          "label": "Les Honeys",
           "correct": false
         },
         {
           "id": "q32-a4",
-          "label": "Trafique d'enfants",
+          "label": "Trafic d'enfants",
           "correct": false
         }
       ]
@@ -857,29 +857,29 @@
       "answers": [
         {
           "id": "q33-a1",
-          "label": "12 Gateaux vendu",
+          "label": "12 gâteaux vendus",
           "correct": false
         },
         {
           "id": "q33-a2",
-          "label": "1635 Honeys achetées",
+          "label": "1 635 Honeys achetées",
           "correct": true
         },
         {
           "id": "q33-a3",
-          "label": "30 montres envoyées à sarah",
+          "label": "30 montres envoyées à Sarah",
           "correct": false
         },
         {
           "id": "q33-a4",
-          "label": "1 500 000 000 fois qu'il regarde josé",
+          "label": "1 500 000 000 fois qu'il regarde José",
           "correct": false
         }
       ]
     },
     {
       "id": "q34",
-      "question": "Combien de Blocs fait la tour d'Ira ?",
+      "question": "Combien de blocs fait la tour d'Ira ?",
       "answers": [
         {
           "id": "q34-a1",
@@ -898,40 +898,40 @@
         },
         {
           "id": "q34-a4",
-          "label": "1245 blocs",
+          "label": "1 245 blocs",
           "correct": false
         }
       ]
     },
     {
       "id": "q35",
-      "question": "Où Nounours est allé cherché son bonnet ?",
+      "question": "Où Nounours est-il allé chercher son bonnet ?",
       "answers": [
         {
           "id": "q35-a1",
-          "label": "à la machine à laver",
+          "label": "À la machine à laver",
           "correct": false
         },
         {
           "id": "q35-a2",
-          "label": "au magasin",
+          "label": "Au magasin",
           "correct": false
         },
         {
           "id": "q35-a3",
-          "label": "entre les deux montagnes du bonheur",
+          "label": "Entre les deux montagnes du bonheur",
           "correct": true
         },
         {
           "id": "q35-a4",
-          "label": "il l'a volé",
+          "label": "Il l'a volé",
           "correct": false
         }
       ]
     },
     {
       "id": "q36",
-      "question": "Pourquoi Shayon a quitté Irafim ?",
+      "question": "Pourquoi Shayon a-t-il quitté Irafim ?",
       "answers": [
         {
           "id": "q36-a1",
@@ -957,7 +957,7 @@
     },
     {
       "id": "q37",
-      "question": "Dans quel endroit Nounours ne s'est pas (encore) endormi ?",
+      "question": "Dans quel endroit Nounours ne s'est-il pas (encore) endormi ?",
       "answers": [
         {
           "id": "q37-a1",
@@ -1013,29 +1013,29 @@
       "answers": [
         {
           "id": "q39-a1",
-          "label": "29%",
+          "label": "29 %",
           "correct": false
         },
         {
           "id": "q39-a2",
-          "label": "77%",
+          "label": "77 %",
           "correct": false
         },
         {
           "id": "q39-a3",
-          "label": "30%",
+          "label": "30 %",
           "correct": true
         },
         {
           "id": "q39-a4",
-          "label": "100%",
+          "label": "100 %",
           "correct": false
         }
       ]
     },
     {
       "id": "q40",
-      "question": "Où est-ce que CosmoBot n'apparait pas ?",
+      "question": "Où est-ce que CosmoBot n'apparaît pas ?",
       "answers": [
         {
           "id": "q40-a1",
